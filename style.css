@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&family=Zen+Old+Mincho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background:url(main_folder/07.jpg),rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: overlay;
+    font-family: "Zen Old Mincho", serif;
+
+}
+
+main{
+    margin: 0 auto;
+    width: 375px;
+    margin-top: 31px;
+    height:auto;
+
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 748.3px;
+    background-color:red;
+    position: relative;
+}
+
+.container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container img{
+    position: absolute;
+    top: 57.93px;
+    left: 146.83px;
+    width: 81.35px;
+    height: 363.7px;
+    z-index: 2;
+    
+}
+
+.text{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 216.88px;
+    padding-inline: 18px;
+    justify-content:space-evenly;
+
+}
+.text p{
+    color: white;
+    text-align: center;
+    font-weight: 550;
+    font-size: 15px;
+    line-height: 27px;
+    font-family: "Zen Old Mincho", serif;
+
+}
+
+.text a{
+     width: 100%;
+     text-decoration: none;
+     color: white;
+     font-weight: 550;
+     font-size: 25px;
+     line-height: 28px;
+     letter-spacing: 0.1em;
+     height:53px;
+     border: 2px solid white;
+
+}
+
+.container_2{
+    width: 100%;
+    height: 1967px;
+    background-color:#F6F6F6;
+    padding: 80px 20px 40px;
+    gap: 50px;
+}
+
+.promises_text{
+    width: 262px;
+    height: 244.5px;
+    gap: 1px;
+}
+
+.promises_text p{
+    color: black;
+    text-align: center;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 5%;
+
+}
+
+.promises_text span{
+    color:#45BDCF;
+}
+
+.promises_flow{
+    width: 100%;
+    height: 1553.38px;
+    gap: 30px;
+}
+
+.promise_1{
+    width: 341px;
+    height: 516px;
+    gap: 22px;
+}
+
+.promise_heading{
+    width: 100%;
+    height: 39px;
+    flex-direction: row;
+    gap: 13px;
+
+}
+
+.promise_text{
+    color: #45BDCF;
+    font-family: "Castoro Titling", serif;
+    font-size: 18px;
+    font-weight:400px;
+    letter-spacing: 0.1em;
+    align-self:end;
+}
+
+.promise_num{
+    color: #45BDCF;
+    font-weight: 550;
+    font-size: 37px;
+    line-height: 153%;
+    letter-spacing: 2%;
+}
+
+.promise_heading span{
+    flex-grow: 1;
+    height: 1px;
+    background:#45BDCF;
+    align-self:flex-end;
+    margin-left: 2px;
+
+}
+
+.promise_title{
+    width: 100%;
+    height: 54px;
+    font-family: "Zen Old Mincho", serif;
+    font-size: 18px;
+    line-height: 136%;
+    text-align: center;
+    font-weight: 450;
+}
+
+.promise_title span{
+    font-size: 27px;
+    line-height: 136%;
+}
+
+.promise_img{
+    width: 100%;
+    height: 210px;
+    border: 10px solid #FFFFFF;
+}
+
+.promise_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promise_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    height: 147px;
+
+
+}
+.promise_desc p {
+
+    font-weight: 450px;
+    font-size: 12px;
+    line-height: 174%;
+    letter-spacing: 0px;
+    color: #111111;
+
+}
+
+.promise_desc span{
+    letter-spacing: -1px;
+    font-weight: 450px;
+    font-size: 12px;
+    line-height: 174%;    
+}
+
+
+.map_container{
+    width: 100%;
+    height: 2308px;
+    padding: 40px 0;
+    gap: 45px;
+    background-color: #FFFFFF;
+
+}
+
+.map_title{
+    width: 339.5px;
+    height: 53.13px;
+    gap: 10px;
+
+}
+
+.map_header{
+    width: 83.25px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 7px;
+    text-align: center;
+    border-bottom: 1px solid #45BDCF;
+    padding-bottom: 20px;
+    
+
+}
+
+.map_title p{
+
+    text-align: center;
+    letter-spacing: 0.15em;
+
+}
+
+.map_area{
+    width: 100%;
+    height: 236.8px;
+}
+.map_area p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 174%;
+
+}
+
+.map_area img{
+    width: 100%;
+    height: 184px;
+    
+}
+
+
+.timeline {
+  width: 340px;
+  height: 1822px;
+  position: relative;
+  padding-left: 20px;  
+  border-left: 2px solid #50c7dc; 
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: #50c7dc;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-content {
+  /* background: #fff; */
+  background: #fff8f0;
+  padding: 10px 0;
+
+}
+
+.timeline-content h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.timeline-content .images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.timeline-content img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.timeline-content .tags {
+  margin: 10px 0;
+}
+
+.timeline-content .tags span {
+  display: inline-block;
+  background: #fff8f0;
+  border: 1px solid #f0b37e;
+  color: #d97c2b;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-right: 6px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+@media screen and (max-width: 375px){
+    main{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+}
