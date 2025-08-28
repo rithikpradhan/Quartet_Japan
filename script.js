@@ -115,3 +115,33 @@ window.addEventListener("click", (e) => {
     }, 300);
   }
 });
+
+
+// Faq Section
+
+const faqCards = document.querySelectorAll(".faq_cards");
+const answers = document.querySelectorAll(".answers");
+
+faqCards.forEach((card, index) => {
+  const icon = card.querySelector("img");
+
+  card.addEventListener("click", () => {
+    const answer = answers[index];
+
+    if (answer.classList.contains("open")) {
+      // close
+      answer.classList.remove("open");
+      icon.src = "main_folder/Plus Icon.png";
+    } else {
+      // close all others first (optional, like accordion)
+      answers.forEach((ans, i) => {
+        ans.classList.remove("open");
+        faqCards[i].querySelector("img").src = "main_folder/Plus Icon.png";
+      });
+
+      // open clicked one
+      answer.classList.add("open");
+      icon.src = "main_folder/minus_24.png";
+    }
+  });
+});

@@ -711,14 +711,14 @@ main{
 
 .area{
     width: 100%;
-    height: 1633px;
+    /* height: 1633px; */
     background-color: #F9F9F9;
     padding: 40px 0;
     /* background: yellow; */
 }
 
 .area_content{
-    /* background: red; */
+    width: 340px;
     gap: 44px;
 }
 
@@ -735,7 +735,6 @@ main{
 .area_sub_section{
     width: 100%;
     height: auto;
-    /* background: green; */
     gap: 20px;
 
 }
@@ -744,7 +743,6 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 153px);
     grid-template-rows: repeat(auto-fill, 61px);
-
     gap: 10px;
 }
 
@@ -787,6 +785,7 @@ main{
 }
 
 .fair_cards_container{
+    width:100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -921,29 +920,231 @@ main{
 .discount_section{
     gap: 15px;
 }
+
+.discount_section p{
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+
+
+}
 .discounts{
     width: 100%;
 }
 
 .item_included{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .item_included span{
-    border-radius: 24px;
+    display: inline-block;
+    padding: 6px 22px;
     border: 1px solid #BF9D5A;
-    padding: 5px;
-    font-size: 12px;
-    text-align: center;
+    border-radius: 24px;
+    width: auto;
+    white-space: nowrap;
+    font-size: 18px;
+    color: #BF9D5A;
+}
+
+.reservation_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #34B1C5;
+    color: white;
+    border-radius: 2px;
+    font-size: 26px;
+    line-height: 160%;
+    border: none;
+    cursor: pointer;
+}
+
+.reservation_btn img{
+    position: absolute;
+    right: 15px;
+}
+
+.access_section{
+    width: 100%;
+    background: white;
+    height: 652px;
+}
+
+.access_content{
+    width: 340px;
+    gap: 20px;
+}
+
+.access_content h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 7px;
+    color:#34B1C5;
+    border-bottom: 1px solid #34B1C5;
+    padding-bottom: 15px;
 
 }
 
+.access_content h4{
+    font-size: 12px;
+    line-height: 7px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.address h5{
+    /* color: green; */
+    font-size: 16px;
+    line-height: 163%;
+    font-weight: 550;
+}
+
+.address p{
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.address img{
+    width: 100%;
+    height: 100%;
+}
+
+.location_icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.location_icon img{
+    width: 15px;
+    height: 15px;
+}
 
 
+.faq_section {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    gap: 11px;
+    background-color: #F9F9F9;
+}
 
+.faq_section h3{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color:#34B1C5;
+    padding-bottom: 15px;
 
+}
+
+.faq_section h3 span{
+    border-bottom: 1px solid #34B1C5;
+    padding-inline: 5px;
+    font-weight: 550;
+}
+
+.faq_section h4{
+    font-size: 12px;
+    line-height: 7px;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+.faq_content{
+    gap: 3px;
+}
+
+.faq_container{
+    width: 340px;
+    gap: 10px;
+}
+
+.faq_cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0.5px solid #D9D9D9;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+
+.faq_cards span{
+    font-size: 14px;
+    line-height: 100%;
+    color: #34B1C5;
+}
+
+.faq_cards h5{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+
+}
+.answers{
+    max-height: 0;
+    overflow: hidden;
+    padding-inline: 10px;
+    transition: max-height 0.3s ease-in-out;
+
+}
+
+.answers.open{
+    max-height: 300px;
+}
+
+.answers p{
+    font-size: 12px;
+    line-height: 163%;
+    font-weight: 500;
+    color: #111111;
+}
+
+footer{
+    width: 100%;
+    padding: 21px;
+    background-color:#252424;
+    gap: 10px;
+
+}
+
+.footer_container{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-start;
+
+}
+
+.footer_container p,a{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 163%;
+    letter-spacing: 5%;
+    color: white;
+
+}
 
 @media screen and (min-width: 768px){
     main{
