@@ -5,518 +5,483 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
     <main>
-        <div class="container">
-            <video autoplay loop muted>
-                <source src="main_folder/main-video/bg-video.mp4" type="video/mp4">
-            </video>
+        <!-- ======================
+            Hero Section
+        ====================== -->
 
-            <img src="main_folder/header-img-1.png" alt="">
+        <section class="hero">
 
-            <div class="text flex">
-                <p>原宿駅3分。<br> 都会の喧騒を離れ、東郷の杜が導く神聖の舞台。 鳥居をくぐるその瞬間、物語が始まります。</p>
-                <a href="" class="flex">まずはフェア参加</a>
+             <!-- Background Video -->
+
+                 <video class="hero__video" autoplay loop muted>
+                    <source src="main_folder/main-video/Bg-Video-1.mp4" type="video/mp4">
+                 </video>
+
+             <!-- Overlay Image -->
+              
+                <img src="main_folder/header-img-1.webp" alt="Wedding Symbol" class="hero__image">
+
+                <!-- Text Content -->
+
+                <div class="hero__content">
+                    <p class="hero__text">
+                    原宿駅3分。<br>
+                    都会の喧騒を離れ、東郷の杜が導く神聖の舞台。<br>
+                    鳥居をくぐるその瞬間、物語が始まります。
+                    </p>
+                    <a href="#" class="hero__btn flex-center">まずはフェア参加</a>
+                </div>
 
 
-            </div>
+        </section>
 
-        </div>
+        <!-- ======================
+            Promises Section
+        ====================== -->
 
-        <!-- Promises Container -->
+            <section class="promises flex-col-center">
+                <!-- Intro Text -->
+             <div class="promises__intro flex-col-center">
+                    <p>
+                    和装の美しさも、<br>
+                    ゲストへのおもてなしも―― その両方を叶えたいふたりへ。<br>
+                    <span>“美しい神前式”</span>を叶える <br> 東郷記念館からの
+                    </p>
+                    <img src="main_folder/promise_text.webp" alt="Promises Text">
+             </div>
 
-        <div class="container_2 flex">
-
-            <div class="promises_text flex">
-                <p>和装の美しさも、<br>
-                    ゲストへのおもてなしも――
-                    その両方を叶えたいふたりへ。
-                     <span>“美しい神前式”</span>を叶える
-                    東郷記念館からの
-                </p>
-                <img src="main_folder/promise_text.png" alt="">
-
-            </div>
-
-            <!-- Promises Flow -->
-
-            <div class="promises_flow flex">
-
-                <!-- Promise 1 -->
-
-                <div class="promise_1 flex">
-
-                    <div class="promise_heading flex">
-                        <p class="promise_text">Promise</p>
-                        <p class="promise_num">1</p>
-                        <span></span>
+                <!-- Promises Flow -->
+                <div class="promises__list flex-col-center">
+                    
+                    <!-- Promise Item 1 -->
+                <div class="promise flex-col-center">
+                    <div class="promise__heading">
+                        <p class="promise__label">Promise</p>
+                        <p class="promise__number">1</p>
+                        <span class="promise__line"></span>
                     </div>
 
-                    <div class="promise_title">
-                        四季彩る庭園を <br> <span>貸切にして行う庭参進の儀</span>
+                    <h3 class="promise__title">
+                        四季彩る庭園を <br>
+                        <span>貸切にして行う庭参進の儀</span>
+                    </h3>
+
+                    <div class="promise__img">
+                        <img src="main_folder/01.webp" alt="庭参進の儀">
                     </div>
 
-                    <!-- Promise Image 1 -->
-
-                    <div class="promise_img">
-                        <img src="main_folder/01.jpg" alt="">
-                        
-                    </div>
-                    <div class="promise_desc">
+                    <div class="promise__desc flex-col">
                         <p>神池に架かる浮橋を進む唯一無二の〈庭参進の儀〉――</p>
                         <p>１万坪の杜を完全に閉じ、深い緑と雅楽だけが花嫁を包む。</p>
-                        <p>東郷記念館は、都内では稀少な”庭園の完全貸切” <br><span>ふたりの誓いに立ち会えるのは、ご招待した大切なゲストだけ。</span> <br>水面のゆらぎと雅楽の余韻が、<br> 神前式をまるで映画のワンシーンへと導きます。</p>
-
-
+                        <p>
+                        東郷記念館は、都内では稀少な”庭園の完全貸切” <br>
+                        <span>ふたりの誓いに立ち会えるのは、ご招待した大切なゲストだけ。</span> <br>
+                        水面のゆらぎと雅楽の余韻が、<br>
+                        神前式をまるで映画のワンシーンへと導きます。
+                        </p>
                     </div>
-
-
-                    
-
                 </div>
 
-                <!-- Promise 2 -->
-
-                <div class="promise_1 flex">
-
-                    <div class="promise_heading flex">
-                        <p class="promise_text">Promise</p>
-                        <p class="promise_num">2</p>
-                        <span></span>
+                    <!-- Promise Item 2 -->
+                <div class="promise flex-col-center">
+                    <div class="promise__heading">
+                        <p class="promise__label">Promise</p>
+                        <p class="promise__number">2</p>
+                        <span class="promise__line"></span>
                     </div>
 
-                    <div class="promise_title">
-                        美しさを引き出す <br> <span>トータルスタイリング</span>
+                    <h3 class="promise__title">
+                        美しさを引き出す <br>
+                        <span>トータルスタイリング</span>
+                    </h3>
+
+                    <div class="promise__img">
+                        <img src="main_folder/02.webp" alt="トータルスタイリング">
                     </div>
 
-                    <!-- Promise Image 1 -->
-
-                    <div class="promise_img">
-                        <img src="main_folder/02.jpg" alt="">
-                        
-                    </div>
-                    <div class="promise_desc">
+                    <div class="promise__desc flex-col">
                         <p>花嫁を最も美しく映す——</p>
                         <p>神池の光に合わせて仕立てる、専属スタイリング。</p>
-                        <p>庭参進の一歩一歩に、季節の光や緑が映えるように。<br> 会場を知り尽くしたスタイリストと衣装サロンが、<br> <span>その場にふさわしい和装やドレスを丁寧にコーディネートします。</span></p>
-
-
+                        <p>
+                        庭参進の一歩一歩に、季節の光や緑が映えるように。<br>
+                        会場を知り尽くしたスタイリストと衣装サロンが、<br>
+                        <span>その場にふさわしい和装やドレスを丁寧にコーディネートします。</span>
+                        </p>
                     </div>
-
-
-                    
-
                 </div>
 
-                <!-- Promise 3 -->
-
-                <div class="promise_1 flex">
-
-                    <div class="promise_heading flex">
-                        <p class="promise_text">Promise</p>
-                        <p class="promise_num">3</p>
-                        <span></span>
+                    <!-- Promise Item 3 -->
+                <div class="promise flex-col-center">
+                    <div class="promise__heading">
+                        <p class="promise__label">Promise</p>
+                        <p class="promise__number">3</p>
+                        <span class="promise__line"></span>
                     </div>
 
-                    <div class="promise_title">
-                       ふたりの希望に合わせた <br> <span>自由なウエディングスタイル</span>
+                    <h3 class="promise__title">
+                        ふたりの希望に合わせた <br>
+                        <span>自由なウエディングスタイル</span>
+                    </h3>
+
+                    <div class="promise__img">
+                        <img src="main_folder//03.webp" alt="自由なウエディングスタイル">
                     </div>
 
-                    <!-- Promise Image 1 -->
-
-                    <div class="promise_img">
-                        <img src="main_folder/03.jpg" alt="">
-                        
-                    </div>
-
-                    <div class="promise_desc">
-                        <p>6名から130名まで可能な神殿と4つの多彩な披露宴会場。
-                        家族だけの結婚式も、<span>sたくさんのゲストに囲まれての結婚式も。</span> </p>
-                        
-                        <p>都内では珍しい友人参列が可能な神殿と隣接する <br>
+                    <div class="promise__desc flex-col">
+                        <p>
+                        6名から130名まで可能な神殿と4つの多彩な披露宴会場。<br>
+                        家族だけの結婚式も、<span>たくさんのゲストに囲まれての結婚式も。</span>
+                        </p>
+                        <p>
+                        都内では珍しい友人参列が可能な神殿と隣接する <br>
                         4つの和モダン会場は和装もドレスも映え、<br>
-                        ケーキ入刀も鏡開きも自在。</p>
-
-
+                        ケーキ入刀も鏡開きも自在。
+                        </p>
                     </div>
+                </div>
+             </div>
+            </section>
 
+            <!-- ======================
+                    Map Section
+            ====================== -->
 
-                    
+        <section class="map flex-col-center">
 
+                <!-- Title -->
+                <div class="map__title flex-center-col">
+                <h2 class="map__header">地図</h2>
+                <p class="map__sub">MAP</p>
                 </div>
 
-            </div>
+                <!-- Map Area -->
+                <div class="map__area flex-center-col">
+                <p>
+                    庭園〜神前式〜披露宴までが同じ敷地内で <br>
+                    完結するため移動ロスはゼロ。
+                </p>
+                <img src="main_folder/map.webp" alt="会場マップ">
+                </div>
 
+                <!-- Timeline 1 -->
+                <div class="timeline flex-col">
+                <!-- Item 1 -->
+                <div class="timeline__item">
+                    <div class="timeline__content flex-col">
+                    <h2>
+                        日本庭園
+                        <div class="timeline__icon">1</div>
+                    </h2>
+                    <h3>
+                        写真撮影
+                        <div class="timeline__mark"></div>
+                    </h3>
 
-        </div>
-
-        <!-- Map  -->
-
-        <div class="map_container flex">
-
-            <div class="map_title flex">
-                <h2 class="map_header">地図</h2>
-                <p>MAP</p>
-            </div>
-
-            <!-- Map Area -->
-            <div class="map_area flex">
-
-                <p>庭園〜神前式〜披露宴まで  が同じ敷地内で <br> 完結するため移動ロスはゼロ。</p>
-                <img src="main_folder/map.png" alt="">
-
-            </div>
-
-            <!-- timeline -->
-
-            <div class="timeline">
-                <!-- Block 1 -->
-                 <div class="timeline_item">
-                    
-                    
-                    <div class="timeline_content flex">
-                        <h2>日本庭園
-                            <div class="timeline_icon">1</div>
-                        </h2>
-                         <h3>写真撮影
-                            <div class="timeline_mark"></div>
-                         </h3>
-                         
-                         <div class="images">
-                            <img src="main_folder/05.jpg" alt="">
-                            <img src="main_folder/06.jpg" alt="">
-                            <img src="main_folder/07.jpg" alt="">
-                            <img src="main_folder/08.jpg" alt="">
-                         </div>
-                         <div class="tags">
-                             <span>完全貸切</span>
-                             <span>四季折々の美しさ</span>
-                             <span>1万坪</span>
-                         </div>
-                         <p>
-                            日本庭園を貸切にして、この日のために選んだ和装で <br> 写真撮影を。
-                            その季節ならではのお美しいお写真が <br>残せます。
-                         </p>
+                    <div class="timeline__images">
+                        <img src="main_folder/05.webp" alt="">
+                        <img src="main_folder/06.webp" alt="">
+                        <img src="main_folder/07.webp" alt="">
+                        <img src="main_folder/08.webp" alt="">
                     </div>
-                 </div>
 
-                 <!-- Block 2 -->
-
-
-                <div class="timeline_item">
-                    
-                   
-                    <div class="timeline_content flex">
-                       
-                         <h3>庭参進
-                             <div class="timeline_mark"></div>
-                         </h3>
-                         <img src="main_folder/09.jpg" alt="">
-
-                         <div class="tags">
-                             <span>水上参進</span>
-                             <span>ゲスト参加OK</span>
-                             <span>映画のワンシーン</span>
-                         </div>
-                         <p>
-
-                            神池から始まる参進は東郷記念館ならでは。<br> 大切なゲストお一人お一人のお顔を見ながら、<br> 雅楽の音色に導かれご本殿正面へと向かいます。
-                            
-                         </p>
+                    <div class="tags">
+                        <span>完全貸切</span>
+                        <span>四季折々の美しさ</span>
+                        <span>1万坪</span>
                     </div>
-                 </div>
-            </div>
 
-            
-            <div class="timeline">
-                <!-- Block 1 -->
-                 <div class="timeline_item">
-                    
-                    
-                    <div class="timeline_content flex">
-                        <h4>神殿
-                            <div class="timeline_icon">2</div>
-                        </h4>
-                         <h3>昭和15年創建、 <br>勝運を授かる本殿で叶える本格神前式
-                            
-                         </h3>
-                         <img src="main_folder/10.jpg" alt="">
-                         
-
-                         <div class="tags">
-                             <span>130名収容可能</span>
-                             <span>全天候型</span>
-                             <span>生演奏演出</span>
-                         </div>
-                         <p>
-                            勝運・航海安全のご利益で知られる<br>
-                            東郷平八郎ゆかりの社殿は、<br>
-                            80余年、数え切れない夫婦を門出へと <br>
-                            送り出してきた由緒の舞台です。
-                         </p>
+                    <p>
+                        日本庭園を貸切にして、この日のために選んだ和装で <br>
+                        写真撮影を。その季節ならではのお美しいお写真が <br>
+                        残せます。
+                    </p>
                     </div>
-                 </div>
+                </div>
 
-                 <!-- Block 2 -->
-                <div class="timeline_item">
-                    
-                   
-                    <div class="timeline_content flex">
-                       
-                         <h3>回廊
-                             <div class="timeline_mark"></div>
-                         </h3>
-                         <img src="main_folder/11.jpg" alt="">
+                <!-- Item 2 -->
+                <div class="timeline__item">
+                    <div class="timeline__content flex-col">
+                    <h3>
+                        庭参進
+                        <div class="timeline__mark"></div>
+                    </h3>
+                    <img src="main_folder/09.webp" alt="庭参進">
 
-                         <div class="tags">
-                             <span>フォトスポット</span>
-                             <span>雨でも安心</span>
-                             <span>バリアフリー</span>
-                         </div>
-                         <p>
-
-                            挙式後は神社と披露宴会場を繋ぐ <br> 回廊を通りお食事会場へ
-                            
-                         </p>
+                    <div class="tags">
+                        <span>水上参進</span>
+                        <span>ゲスト参加OK</span>
+                        <span>映画のワンシーン</span>
                     </div>
-                 </div>
 
-            </div>
+                    <p>
+                        神池から始まる参進は東郷記念館ならでは。<br>
+                        大切なゲストお一人お一人のお顔を見ながら、<br>
+                        雅楽の音色に導かれご本殿正面へと向かいます。
+                    </p>
+                    </div>
+                </div>
+                </div>
 
-            <!-- timeline 3 -->
-        <div class="timeline_3 flex">
-                <h3>ご披露宴会場
-                    <div class="timeline_icon_last">3</div>
+                <!-- Timeline 2 -->
+                <div class="timeline flex-col">
+                <!-- Item 1 -->
+                <div class="timeline__item">
+                    <div class="timeline__content flex-col">
+                    <h4>
+                        神殿
+                        <div class="timeline__icon">2</div>
+                    </h4>
+                    <h3>
+                        昭和15年創建、 <br>
+                        勝運を授かる本殿で叶える本格神前式
+                    </h3>
+                    <img src="main_folder/10.webp" alt="神殿">
+
+                    <div class="tags">
+                        <span>130名収容可能</span>
+                        <span>全天候型</span>
+                        <span>生演奏演出</span>
+                    </div>
+
+                    <p>
+                        勝運・航海安全のご利益で知られる<br>
+                        東郷平八郎ゆかりの社殿は、<br>
+                        80余年、数え切れない夫婦を門出へと<br>
+                        送り出してきた由緒の舞台です。
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline__item">
+                    <div class="timeline__content flex-col">
+                    <h3>
+                        回廊
+                        <div class="timeline__mark"></div>
+                    </h3>
+                    <img src="main_folder/11.webp" alt="回廊">
+
+                    <div class="tags">
+                        <span>フォトスポット</span>
+                        <span>雨でも安心</span>
+                        <span>バリアフリー</span>
+                    </div>
+
+                    <p>
+                        挙式後は神社と披露宴会場を繋ぐ <br>
+                        回廊を通りお食事会場へ
+                    </p>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Timeline 3 -->
+                <div class="timeline--last timeline__content flex-col">
+                <h3>
+                    ご披露宴会場
+                    <div class="timeline__icon">3</div>
                 </h3>
-                <p>2024年夏完全リニューアル。一万坪の日本庭園を <br> 望む最新デザインの3つの披露宴会場。</p>
+                <p>
+                    2024年夏完全リニューアル。一万坪の日本庭園を <br>
+                    望む最新デザインの3つの披露宴会場。
+                </p>
 
-            <div class="cards_container">
-
-                <div class="timeline_cards">
-                    <h2> TAMAYURA <br> 玉響</h2>
-                    <img src="main_folder/12.jpg" alt="">
-
-
+                <div class="cards">
+                    <!-- Card 1 -->
+                    <div class="card">
+                    <h2>TAMAYURA <br> 玉響</h2>
+                    <img src="main_folder/12.webp" alt="TAMAYURA">
                     <div class="tags">
-                             <span>10~79名</span>
-                             <span>会食もOK</span>
-                             <span>ガーデンビュー</span>
-                     </div>
-                     <p>
-                        ご縁を大切にした場所として、丸や円がモチーフとするパーティルーム。 屋久杉をふんだんに使用し、窓の向こうには四季折々に色づく庭園が広がります。 
-                     </p>
-                    
-                </div>
-                <div class="timeline_cards">
-                    <h2> JUKO <br>聚洸 </h2>
-                    <img src="main_folder/13.jpg" alt="">
+                        <span>10~79名</span>
+                        <span>会食もOK</span>
+                        <span>ガーデンビュー</span>
+                    </div>
+                    <p>
+                        ご縁を大切にした場所として、丸や円がモチーフとするパーティルーム。
+                        屋久杉をふんだんに使用し、窓の向こうには四季折々に色づく庭園が広がります。
+                    </p>
+                    </div>
 
-
+                    <!-- Card 2 -->
+                    <div class="card">
+                    <h2>JUKO <br> 聚洸</h2>
+                    <img src="main_folder/13.jpg" alt="JUKO">
                     <div class="tags">
-                             <span>40~93名</span>
-                             <span>和モダン</span>
-                             <span>ガーデンビュー</span>
-                     </div>
-                     <p>
-                       日本の伝統美を感じる本格的な和テイスト
+                        <span>40~93名</span>
+                        <span>和モダン</span>
+                        <span>ガーデンビュー</span>
+                    </div>
+                    <p>
+                        日本の伝統美を感じる本格的な和テイスト。
                         壁と天井の直線美、絨毯は海をイメージした曲線美で日本の伝統感じる空間に。
-                     </p>
-                    
-                </div>
-                <div class="timeline_cards">
-                    <h2> TENSHO <br> 天翔</h2>
-                    <img src="main_folder/14.jpg" alt="">
+                    </p>
+                    </div>
 
-
+                    <!-- Card 3 -->
+                    <div class="card">
+                    <h2>TENSHO <br> 天翔</h2>
+                    <img src="main_folder/14.webp" alt="TENSHO">
                     <div class="tags">
-                             <span>60~138名</span>
-                             <span>テラス有</span>
-                             <span>フロア吹き抜け</span>
-                     </div>
-                     <p>
-                        「常に上向きで天を翔けるように輝いてほしい」という想いが込められたフロア吹き抜けの 開放感溢れる雰囲気。
-                     </p>
-                    
+                        <span>60~138名</span>
+                        <span>テラス有</span>
+                        <span>フロア吹き抜け</span>
+                    </div>
+                    <p>
+                        「常に上向きで天を翔けるように輝いてほしい」という想いが込められた
+                        フロア吹き抜けの開放感溢れる雰囲気。
+                    </p>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-
-            
-
-        </div>
-
-
-        <!-- Voice Section  -->
-        <div class="voice_container">
-
-            <h3>お<span>客様のお</span>声</h3>
-
-            <h4>VOICE</h4>
-
-            <div class="image_container">
-              
-
-                
-                <div class="voice_card flex">
-
-                    <p>2024年11月挙式　Mご夫妻</p>
-                    <img src="main_folder/15.jpg" alt="">
-
-                    <h5>貸切の庭園で、 ゲストと目が合う参進という贅沢</h5>
-                    <p>日本庭園はとにかく圧巻です。そこで参進をおこなうのですが、写真撮影も参進も貸切になります。また、ゲストがつくる花道を通って参進を行うのでひとりひとりと顔を合わせることができてゲストからも好評でした。私たちは元々神社で挙げるのに懸念していたのが「一般の人の見物にならないこと」と「神社の寒さ」でしたがどちらも全く問題なく神前式を考えている方には本当におすすめです。</p>
-                    <button class="see_more"
-                     data-images="main_folder/15_photo/0115.jpg,
-                                  main_folder/15_photo/0116.jpg,
-                                  main_folder/15_photo/0144.jpg,
-                                  main_folder/15_photo/0156.jpg,
-                                  main_folder/15_photo/0158.jpg,
-                                  main_folder/15_photo/0161.jpg,
-                                  main_folder/15_photo/0163.jpg,
-                                  main_folder/15_photo/0164.jpg,
-                                  main_folder/15_photo/0171.jpg,
-                                  main_folder/15_photo/0173.jpg,
-                                  main_folder/15_photo/0174.jpg,
-                                  main_folder/15_photo/0177.jpg,
-                                  main_folder/15_photo/0180.jpg,
-                                  main_folder/15_photo/0184.jpg,
-                                  main_folder/15_photo/0186.jpg,
-                                  main_folder/15_photo/0301.jpg,
-
-
-                     "><img src="main_folder/gallery_image.png" alt="">画像をもっと見る</button>
-
                 </div>
-                
+        </section>
 
-                
-                <div class="voice_card flex">
+                    <!-- =======================
+                        Voice Section
+                    ======================= -->
+                    <section class="voice flex-col-center">
+                    <div class="voice__header flex-col-center">
+                    <h3 class="voice__title">お<span>客様のお</span>声</h3>
+                    <h4 class="voice__subtitle">VOICE</h4>
+                    </div>
 
-                    <p>2025年6月挙式　Mご夫妻 </p>
-                    <img src="main_folder/16.jpg" alt="">
+                    <!-- Voice Cards Wrapper -->
+                    <div class="voice__cards">
 
-                    <h5>貸切の庭園で、 ゲストと目が合う参進という贅沢</h5>
-                    <p>日本庭園はとにかく圧巻です。 そこで参進をおこなうのですが、写真撮影も参進も貸切になります。また、ゲストがつくる花道を通って参進を行うのでひとりひとりと顔を合わせることができてゲストからも好評でした。私たちは元々神社で挙げるのに懸念していたのが「一般の人の見物にならないこと」と「神社の寒さ」でしたがどちらも全く問題なく神前式を考えている方には本当におすすめです。</p>
-                    <button class="see_more"
-                    data-images="main_folder/16_photo/0067.jpg,
-                                 main_folder/16_photo/0113.jpg,
-                                 main_folder/16_photo/0114.jpg,
-                                 main_folder/16_photo/0128.jpg,
-                                 main_folder/16_photo/0154.jpg,
-                                 main_folder/16_photo/0180.jpg,
-                                 main_folder/16_photo/0208.jpg,
-                                 main_folder/16_photo/0211.jpg,
-                                 main_folder/16_photo/0212.jpg,
-                                 main_folder/16_photo/0252.jpg,
-                                 main_folder/16_photo/0311.jpg,
-                                 main_folder/16_photo/0376.jpg,
-                                 main_folder/16_photo/0392.jpg,
-                                 main_folder/16_photo/0546.jpg,
-                                 main_folder/16_photo/0584.jpg,
-                                 main_folder/16_photo/0815.jpg,
-                    "
-                    
-                    >
-                    <img src="main_folder/gallery_image.png" alt="">画像をもっと見る</button>
+                    <article class="voice-card flex-col-between">
+                        <p class="voice-card__date">2024年11月挙式　Mご夫妻</p>
+                        <img src="main_folder/15.jpg" alt="Voice 1" class="voice-card__image">
 
+                        <h5 class="voice-card__heading">貸切の庭園で、<br> ゲストと目が合う参進という贅沢</h5>
+                        <p class="voice-card__text">
+                        日本庭園はとにかく圧巻です。そこで参進をおこなうのですが、写真撮影も参進も貸切になります。
+                        また、ゲストがつくる花道を通って参進を行うのでひとりひとりと顔を合わせることができてゲストからも好評でした。
+                        私たちは元々神社で挙げるのに懸念していたのが「一般の人の見物にならないこと」と「神社の寒さ」でしたがどちらも全く問題なく神前式を考えている方には本当におすすめです。
+                        </p>
+
+                        <button 
+                        class="btn see-more"
+                        data-images="main_folder/15_photo/0115.webp,
+                            main_folder/15_photo/0116.webp, main_folder/15_photo/0144.webp,
+                            main_folder/15_photo/0156.webp,main_folder/15_photo/0158.webp,
+                            main_folder/15_photo/0161.webp, main_folder/15_photo/0163.webp,
+                            main_folder/15_photo/0164.webp, main_folder/15_photo/0171.webp,
+                            main_folder/15_photo/0173.webp, main_folder/15_photo/0174.webp,
+                            main_folder/15_photo/0177.webp, main_folder/15_photo/0180.webp,
+                            main_folder/15_photo/0184.webp, main_folder/15_photo/0186.webp,
+                            main_folder/15_photo/0301.webp"
+                        >
+                        <img src="main_folder/gallery_image.png" alt=""> 画像をもっと見る
+                        </button>
+                    </article>
+
+                   
+                    <article class="voice-card flex-col-between">
+                        <p class="voice-card__date">2025年6月挙式　Mご夫妻</p>
+                        <img src="main_folder/16.jpg" alt="Voice 2" class="voice-card__image">
+                        <h5 class="voice-card__heading">自然光と広さで叶えた、<br> みんなで迎える神前式</h5>
+                        <p class="voice-card__text">
+                            「自然光が入る️神前式」を希望していたので、<br> まさにぴったりでした！ <br> 天井から自然光が入るのに屋根があるので、仮 <br>に雨でも安心でした。<br> また、神社だとなかなか大人数入れないところが多かったのですが、広々100人以上入ることができ、ゲスト誰一人漏れることなく参加してもらえたのが嬉しかったです。
+
+                        </p>
+
+                        <button class="btn see-more"
+                        data-images="main_folder/16_photo/0067.webp,
+                            main_folder/16_photo/0113.webp, main_folder/16_photo/0114.webp,
+                            main_folder/16_photo/0128.webp,main_folder/16_photo/0154.webp,
+                            main_folder/16_photo/0180.webp, main_folder/16_photo/0208.webp,
+                            main_folder/16_photo/0211.webp, main_folder/16_photo/0212.webp,
+                            main_folder/16_photo/0252.webp, main_folder/16_photo/0311.webp,
+                            main_folder/16_photo/0376.webp, main_folder/16_photo/0392.webp,
+                            main_folder/16_photo/0546.webp, main_folder/16_photo/0584.webp,
+                            main_folder/16_photo/0815.webp"
+                        
+                        
+                        > <img src="main_folder/gallery_image.png" alt="">画像をもっと見る </button>
+                    </article>
+
+                    <article class="voice-card flex-col-between">
+                        <p class="voice-card__date">2025年4月挙式　Oご夫妻</p>
+                        <img src="main_folder/17.jpg" alt="Voice 3" class="voice-card__image">
+                        <h5 class="voice-card__heading">和も洋も、ふたりらしさも。<br>
+                                                        会場ですべて叶う披露宴</h5>
+                        <p class="voice-card__text">挙式後そのまま移動なしで披露宴へ。最初は鏡開きで賑やかに、後半はドレスでケーキ入刀。和も洋も同じ会場で叶って段取りもスムーズ。移動がないから写真タイムや余興の時間も柔軟に組めて、ゲストを待たせずにすんだのが本当に良かったです。年配ゲストも移動がなくて助かったと言っていて、スタッフさんのテンポ良い誘導で終始安心。「二人らしさ満載だったね！」と友人にも言ってもらえました。</p>
+                        <button class="btn see-more"
+                            data-images="main_folder/17_photo/0001.webp,
+                            main_folder/17_photo/002.webp,main_folder/17_photo/0010.webp,
+                            main_folder/17_photo/0106.webp,main_folder/17_photo/0108.webp,
+                            main_folder/17_photo/0123.webp,main_folder/17_photo/0134.webp,
+                            main_folder/17_photo/0255.webp
+                            "
+                        > <img src="main_folder/gallery_image.png" alt="">画像をもっと見る </button>
+                    </article>
+                    </div>
+                </section>
+
+                    <!-- =======================
+                        Popup Gallery
+                    ======================= -->
+                <div class="popup" id="popupGallery">
+                    <div class="popup__content">
+                    <span class="popup__close">&times;</span>
+                    <div class="popup__main">
+                        <img id="mainImage" src="" class="popup__main-img" alt="">
+                        <p>画像を選択すると切り替わります</p>
+                    </div>
+                    <div class="popup__thumbnails" id="thumbnailContainer"></div>
+                    </div>
                 </div>
-                
 
-                
-                <div class="voice_card flex">
 
-                    <p>2025年4月挙式　Oご夫妻</p>
-                    <img src="main_folder/17.jpg" alt="">
+    <!-- Cuisine & Costume -->
 
-                    <h5>貸切の庭園で、 ゲストと目が合う参進という贅沢</h5>
-                    <p>日本庭園はとにかく圧巻です。 そこで参進をおこなうのですが、写真撮影も参進も貸切になります。また、ゲストがつくる花道を通って参進を行うのでひとりひとりと顔を合わせることができてゲストからも好評でした。私たちは元々神社で挙げるのに懸念していたのが「一般の人の見物にならないこと」と「神社の寒さ」でしたがどちらも全く問題なく神前式を考えている方には本当におすすめです。</p>
-                    <button class="see_more"
-                    data-images="main_folder/17_photo/0001.jpg,
-                                 main_folder/17_photo/002.jpg,
-                                 main_folder/17_photo/0010.jpg,
-                                 main_folder/17_photo/0106.jpg,
-                                 main_folder/17_photo/0108.jpg,
-                                 main_folder/17_photo/0123.jpg,
-                                 main_folder/17_photo/0134.jpg,
-                                 main_folder/17_photo/0255.jpg,
- 
-                    "
-                    
-                    >
-                    <img src="main_folder/gallery_image.png" alt="">画像をもっと見る</button>
+            <div class="offerings_section flex">
 
-                </div>
-               
+                    <!-- Cuisine -->
+                    <div class="cuisine_content flex">
+                        <div>
+                            <h3>お料理</h3>
+                            <h4>CUISINE</h4>
+                        </div>
+
+                        <h5>伝統的で革新的な <br>東郷記念館流フレンチ懐石</h5>
+
+                        <div class="cuisine_images">
+                            <img src="main_folder/18.jpg" alt="">
+                            <img src="main_folder/19.jpg" alt="">
+                        </div>
+
+                        <p>
+                            日本の土地で育まれた伝統的な食材や古くから伝わる調理法・調味料を重んじながらも、
+                            華やかなフレンチと組み合わせたフレンチ懐石は、参列されたゲストからも好評のお声をいただいております。
+                        </p>
+                    </div>
+
+                    <!-- Costume -->
+                    <div class="costume_content flex">
+                        <div>
+                            <h3>お衣装</h3>
+                            <h4>COSTUME</h4>
+                        </div>
+
+                        <h5>ここでしか出会えない <br>最上級の和装とインポートドレス</h5>
+
+                        <div class="costume_images">
+                            <img src="main_folder/20.jpg" alt="">
+                            <img src="main_folder/21.jpg" alt="">
+                        </div>
+
+                        <p>
+                            ディティールにこだわり抜いた上質な和装は、京都で買い付けた逸品や著名作家の着物など、多彩にご用意。
+                            また、世界の一流ブランドによる最新ウエディングドレスなど、約1000着以上をラインナップ。
+                            四季折々に息づく庭園での参進の儀や、披露宴会場のインテリアに調和する、最も美しい「運命の一着」と出会うお手伝いをいたします。
+                        </p>
+                    </div>
+
             </div>
-
-
-        </div>
-
-        <!-- Popup Gallery -->
-
-    <div class="popup_gallery" id="popupGallery">
-      <div class="popup_content">
-        <span class="close">&times;</span>
-        <div class="">
-
-        <img id="mainImage" src="" class="main-photo" alt="">
-        <p>画像を選択すると切り替わります</p>
-
-        </div>
-      
-
-        <div class="thumbnail_container" id="thumbnailContainer"></div>
-      </div>
-    </div>
-
-
-    <!-- Cuisine -->
-
-    <div class="cuisine_section flex">
-
-        <div class="cuisine_content flex">
-            <div>
-                <h3>お料理</h3>
-                <h4>CUISINE</h4>
-            </div>
-
-            <h5>伝統的で革新的な <br>東郷記念館流フレンチ懐石</h5>
-
-            <div class="cuisine_images">
-                <img src="main_folder/18.jpg" alt="">
-                <img src="main_folder/19.jpg" alt="">
-            </div>
-
-
-            <p>日本の土地で育まれた伝統的な食材や古くから伝わる調理法・調味料を重んじながらも、華やかなフレンチと組み合わせたフレンチ懐石は、参列されたゲストからも好評のお声をいただいております。</p>
-
-        </div>
-
-        <div class="cuisine_content flex">
-
-            <div>    
-                <h3>お衣装</h3>
-                <h4>COSTUME</h4>
-            </div>
-
-            <h5>ここでしか出会えない <br>最上級の和装とインポートドレス</h5>
-
-            <div class="cuisine_images">
-                <img src="main_folder/20.jpg" alt="">
-                <img src="main_folder/21.jpg" alt="">
-            </div>
-
-
-            <p>ディティールにこだわり抜いた上質な和装は、京都で買い付けた逸品や著名作家の着物など、多彩にご用意。また、世界の一流ブランドによる最新ウエディングドレスなど、約1000着以上をラインナップ。四季折々に息づく庭園での参進の儀や、披露宴会場のインテリアに調和する、最も美しい「運命の一着」と出会うお手伝いをいたします。</p>
-
-            
-
-        </div>
-
-    </div>
 
     <!-- Area -->
 
@@ -763,8 +728,7 @@
     </footer>
 
 
-</main>
+    </main>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

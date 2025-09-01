@@ -1,44 +1,69 @@
-const popup = document.getElementById("popupGallery");
+const popup = document.querySelector(".popup");
+const popupImgs = document.querySelector(".popup img");
 const mainImage = document.getElementById("mainImage");
 const thumbContainer = document.getElementById("thumbnailContainer");
 
-// open popup when clicking "see more"
-document.querySelectorAll('.see_more').forEach(button => {
-    button.addEventListener('click', () => {
-        // get images from data-images attribute
-        const images = button.getAttribute('data-images').split(',');
-
-        // set first image as main
-        mainImage.src = images[0];
-
-        // clear old thumbnails
-        thumbContainer.innerHTML = "";
-
-        // create thumbnails dynamically
-        images.forEach(img => {
-            const thumb = document.createElement('img');
-            thumb.src = img;
-            thumb.classList.add('thumb');
-            thumb.addEventListener('click', () => {
-                mainImage.src = img;
-            });
-            thumbContainer.appendChild(thumb);
-        });
-
-        popup.style.display = "flex";
+// Preload ALL images from "data-images" ahead of time
+window.addEventListener("load", () => {
+  document.querySelectorAll(".see-more").forEach(button => {
+    const images = button.getAttribute("data-images").split(',');
+    images.forEach(imgUrl => {
+      const preloadImg = new Image();
+      preloadImg.src = imgUrl.trim();
     });
+  });
 });
 
+// open popup when clicking "see more"
+
+document.querySelectorAll('.see-more').forEach(button => {
+  button.addEventListener('click', () => {
+    const images = button.getAttribute('data-images').split(',');
+    console.log("button clicked");
+
+    // set first image with fade
+    mainImage.style.opacity = 0;
+    mainImage.src = images[0].trim();
+    mainImage.onload = () => {
+      mainImage.style.opacity = 1;
+    };
+
+    // clear old thumbnails
+    thumbContainer.innerHTML = "";
+
+    // create thumbnails dynamically
+    images.forEach(img => {
+      const thumb = document.createElement('img');
+      thumb.src = img.trim();
+      thumb.classList.add('thumb');
+
+      thumb.addEventListener('click', () => {
+        mainImage.style.opacity = 0;
+        mainImage.src = img.trim();
+        mainImage.onload = () => {
+          mainImage.style.opacity = 1;
+        };
+      });
+
+      thumbContainer.appendChild(thumb);
+    });
+
+    // show popup with smooth fade
+    popup.classList.add("active");
+  });
+});
+
+
 // close popup
-document.querySelector(".popup_gallery .close").addEventListener("click", () => {
-    popup.style.display = "none";
+document.querySelector(".popup .popup__close").addEventListener("click", () => {
+  popup.classList.remove("active");
 });
 
 // close on background click
 popup.addEventListener("click", e => {
-    if (e.target === popup) {
-        popup.style.display = "none";
-    }
+  if (e.target === popup) {
+    popup.classList.remove("active");
+  }
 });
 
 
